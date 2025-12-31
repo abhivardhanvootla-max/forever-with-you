@@ -2,118 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Happy New Year My Love ❤️</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(135deg, #ff758c, #ff7eb3);
-            font-family: 'Segoe UI', sans-serif;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .card {
-            background: white;
-            padding: 30px;
-            max-width: 420px;
-            width: 90%;
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-            animation: fadeIn 2s ease;
-        }
-
-        h1 {
-            color: #ff4d6d;
-            margin-bottom: 10px;
-        }
-
-        p {
-            color: #555;
-            font-size: 16px;
-            line-height: 1.6;
-        }
-
-        .heart {
-            font-size: 30px;
-            margin: 10px 0;
-        }
-
-        img {
-            width: 100%;
-            border-radius: 12px;
-            margin: 15px 0;
-        }
-
-        h2 {
-            color: #444;
-            margin-top: 20px;
-        }
-
-        .footer {
-            margin-top: 20px;
-            font-weight: bold;
-            color: #ff4d6d;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    </style>
+    <title>Private 💖</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<div class="card">
-    <h1>🎆 Happy New Year My Love 🎆</h1>
+<div id="lockScreen" class="lock">
+    <h2>🔐 Private Surprise</h2>
+    <p>Enter the password to continue</p>
+    <input type="password" id="passwordInput" placeholder="Password">
+    <button onclick="checkPassword()">Unlock ❤️</button>
+    <p id="errorMsg"></p>
+</div>
 
-    <p>
-        As this year ends,  
-        I just want you to know one thing…
-    </p>
+<div id="content" style="display:none;">
+    <div class="card">
+        <h1>🎆 Happy New Year My Love 🎆</h1>
 
-    <p>
-        **You were the best part of my year 💖**  
-        Every smile, every memory, every moment —
-        all became special because of you.
-    </p>
+        <p>
+            This year gave me many moments,  
+            but **you** were my favorite one 💖
+        </p>
 
-    <!-- OPTIONAL IMAGE -->
-    <!-- Replace "yourimage.jpg" with your image name -->
-    <!-- <img src="yourimage.jpg" alt="Our Memory"> -->
+        <p>
+            Thank you for being my happiness,  
+            my peace,  
+            and my forever 🌸
+        </p>
 
-    <div class="heart">❤️❤️❤️</div>
+        <p class="heart">❤️❤️❤️</p>
 
-    <h2>My Promise to You</h2>
-    <p>
-        I promise to stand with you,  
-        care for you,  
-        support you,  
-        and love you more with every coming year 🌸
-    </p>
+        <h2>My Promise</h2>
+        <p>
+            I promise to stand with you,  
+            laugh with you,  
+            and love you —  
+            not just this year, but always 💍
+        </p>
 
-    <p>
-        Let’s create many more memories,  
-        laugh a little louder,  
-        and love a little deeper 💍
-    </p>
-
-    <div class="footer">
-        Forever Yours,<br>
-        Abhi ❤️
+        <h3>Forever Yours,</h3>
+        <h2>— Abhi</h2>
     </div>
 </div>
+
+<script>
+function checkPassword() {
+    const password = document.getElementById("passwordInput").value;
+    const correctPassword = "Thachu2026";
+
+    if (password === correctPassword) {
+        document.getElementById("lockScreen").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    } else {
+        document.getElementById("errorMsg").innerText = "❌ Wrong password";
+    }
+}
+</script>
 
 </body>
 </html>
