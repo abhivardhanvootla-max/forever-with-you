@@ -1,51 +1,58 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    font-family: 'Segoe UI', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
 }
 
-.card {
-    background: #ffffff;
-    width: 90%;
-    max-width: 420px;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
-}
-
-h1 {
-    color: #ff4d6d;
-    margin-bottom: 15px;
-}
-
-.photo {
-    width: 100%;
-    height: auto;
+.lock, .card, #countdownScreen {
+    background: white;
+    color: #444;
+    padding: 30px;
     border-radius: 15px;
-    margin: 15px 0;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 
-p {
-    color: #555;
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 25px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
     font-size: 16px;
-    line-height: 1.6;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e63956;
+}
+
+.hidden {
+    display: none;
+}
+
+#timer {
+    font-size: 30px;
+    color: #ff4d6d;
+    margin: 20px 0;
 }
 
 .heart {
-    font-size: 28px;
-    margin: 10px 0;
-}
-
-h2, h3 {
-    color: #444;
+    font-size: 30px;
 }
