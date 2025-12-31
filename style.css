@@ -1,12 +1,11 @@
 * {
     box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', sans-serif;
-}
-
-/* BODY */
-body {
     background: linear-gradient(135deg, #ff758c, #ff7eb3);
     min-height: 100vh;
     display: flex;
@@ -14,121 +13,53 @@ body {
     align-items: center;
 }
 
-/* LOCK SCREEN */
-.lock-screen {
-    background: white;
-    width: 90%;
-    max-width: 400px;
-    padding: 30px 25px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 18px 35px rgba(0,0,0,0.3);
-}
-
-.lock-screen h1 {
-    color: #ff4d6d;
-    margin-bottom: 10px;
-}
-
-.lock-screen p {
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.lock-screen input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 12px;
-    font-size: 15px;
-}
-
-.lock-screen button {
-    width: 100%;
-    padding: 12px;
-    border-radius: 10px;
-    border: none;
-    background: #ff4d6d;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.lock-screen button:hover {
-    background: #ff335c;
-}
-
-.countdown {
-    margin-top: 15px;
-    font-size: 15px;
-    color: #333;
-}
-
-.error {
-    color: red;
-    margin-top: 10px;
-}
-
-/* MAIN CONTENT */
 .container {
-    background: white;
+    background: #ffffff;
     width: 90%;
     max-width: 420px;
     padding: 30px 25px;
     border-radius: 20px;
     text-align: center;
-    box-shadow: 0 18px 35px rgba(0,0,0,0.3);
-    animation: fadeIn 1.5s ease;
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1.6s ease;
 }
 
-/* HIDE CONTENT INITIALLY */
-.hidden {
-    display: none;
-}
-
-.container h1 {
+h1 {
     color: #ff4d6d;
     margin-bottom: 15px;
 }
 
-.container h2 {
+h2 {
     color: #333;
-    margin: 20px 0 10px;
+    margin-top: 25px;
 }
 
-.container p {
+p {
     color: #555;
-    line-height: 1.7;
     font-size: 16px;
+    line-height: 1.7;
     margin: 12px 0;
 }
 
-/* IMAGE — THIS FIXES YOUR ISSUE */
-.container img {
+img {
     width: 100%;
-    height: auto;
     border-radius: 15px;
     margin: 18px 0;
-    display: block;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
 }
 
-/* HEART */
 .heart {
     font-size: 32px;
     margin: 15px 0;
     animation: pulse 1.4s infinite;
 }
 
-/* FOOTER */
 footer {
     margin-top: 25px;
     font-size: 14px;
     color: #777;
 }
 
-/* ANIMATIONS */
 @keyframes fadeIn {
     from {
         opacity: 0;
