@@ -6,12 +6,16 @@
 <title>Happy New Year My Love ❤️</title>
 
 <style>
+    * {
+        box-sizing: border-box;
+    }
+
     body {
         margin: 0;
         padding: 0;
         font-family: 'Segoe UI', sans-serif;
         background: linear-gradient(135deg, #ff758c, #ff7eb3);
-        height: 100vh;
+        min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -21,55 +25,114 @@
         background: white;
         width: 90%;
         max-width: 420px;
-        padding: 30px;
-        border-radius: 18px;
+        padding: 30px 25px;
+        border-radius: 20px;
         text-align: center;
-        box-shadow: 0 15px 30px rgba(0,0,0,0.25);
-        animation: fadeIn 2s ease;
+        box-shadow: 0 18px 35px rgba(0,0,0,0.3);
+        animation: fadeIn 1.8s ease-in-out;
     }
 
     h1 {
         color: #ff4d6d;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
 
     h2 {
-        color: #444;
-        margin-top: 20px;
+        color: #333;
+        margin-top: 25px;
     }
 
     p {
         color: #555;
-        line-height: 1.6;
+        line-height: 1.7;
         font-size: 16px;
+        margin: 12px 0;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 15px;
+        margin: 18px 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.25);
     }
 
     .heart {
         font-size: 32px;
         margin: 15px 0;
-        animation: pulse 1.5s infinite;
-    }
-
-    img {
-        width: 100%;
-        border-radius: 12px;
-        margin: 15px 0;
+        animation: pulse 1.4s infinite;
     }
 
     footer {
-        margin-top: 20px;
+        margin-top: 25px;
         font-size: 14px;
-        color: #888;
+        color: #777;
     }
 
     @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(20px); }
-        to { opacity: 1; transform: translateY(0); }
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     @keyframes pulse {
         0% { transform: scale(1); }
-        50% { transform: scale(1.1); }
+        50% { transform: scale(1.12); }
+        100% { transform: scale(1); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🎆 Happy New Year My Love 🎆</h1>
+
+    <p>
+        As this year ends and a new one begins,<br>
+        I just want you to know that<br>
+        <strong>you are the best thing that ever happened to me</strong> 💖
+    </p>
+
+    <div class="heart">❤️❤️❤️</div>
+
+    <!-- IMAGE -->
+    <img src="her.jpg" alt="My Love">
+
+    <p>
+        Thank you for every smile,<br>
+        every laugh,<br>
+        every moment we shared 🌸
+    </p>
+
+    <h2>My Promise To You</h2>
+
+    <p>
+        I promise to stand by you,<br>
+        support your dreams,<br>
+        hold your hand in every situation,<br>
+        and love you more with every passing year 💍
+    </p>
+
+    <p>
+        This New Year is special<br>
+        because <strong>I have you</strong> 💕
+    </p>
+
+    <footer>
+        Forever Yours,<br>
+        <strong>— Abhi</strong>
+    </footer>
+
+</div>
+
+</body>
+</html>        50% { transform: scale(1.1); }
         100% { transform: scale(1); }
     }
 </style>
@@ -237,4 +300,5 @@ const timer = setInterval(() => {
 
 </body>
 </html>
+
 
