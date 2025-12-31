@@ -1,58 +1,70 @@
-body {
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+body {
     height: 100vh;
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
-    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #fff;
+    justify-content: center;
 }
 
-.lock, .card, #countdownScreen {
-    background: white;
-    color: #444;
-    padding: 30px;
-    border-radius: 15px;
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px 25px;
+    max-width: 420px;
+    margin: auto;
     text-align: center;
-    width: 90%;
-    max-width: 400px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
 }
 
-input {
-    width: 80%;
-    padding: 10px;
-    margin-top: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-}
-
-button {
-    margin-top: 15px;
-    padding: 10px 25px;
-    border: none;
-    background: #ff4d6d;
-    color: white;
-    font-size: 16px;
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #e63956;
-}
-
-.hidden {
-    display: none;
-}
-
-#timer {
-    font-size: 30px;
+.card h1 {
     color: #ff4d6d;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.card h2 {
+    color: #444;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
     margin: 20px 0;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 .heart {
-    font-size: 30px;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.footer {
+    font-size: 16px;
+    color: #333;
+}
+
+.footer span {
+    font-weight: bold;
+    color: #ff4d6d;
 }
