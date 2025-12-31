@@ -2,93 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>For THACHU ❤️</title>
+    <title>Happy New Year My Love ❤️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- PASSWORD SCREEN -->
-<div id="lockScreen" class="lock">
-    <h1>🔒 Private Surprise</h1>
-    <p>Enter the secret password 💕</p>
-    <input type="password" id="password" placeholder="Password">
-    <button onclick="unlock()">Unlock</button>
-    <p id="error"></p>
+<div class="container">
+
+    <div class="card">
+        <h1>🎆 Happy New Year 🎆</h1>
+        <h2>My Love ❤️</h2>
+
+        <p>
+            As this year ends and a new one begins,  
+            I just want you to know that **you are my favorite part of every year**.
+        </p>
+
+        <p>
+            Thank you for your love, your patience,  
+            your smile, and your support 🌸  
+            Life feels beautiful because you are in it.
+        </p>
+
+        <!-- IMAGE SECTION -->
+        <!-- Create an "images" folder and place your image as photo1.jpg -->
+        <img src="images/photo1.jpg" alt="Our Memory">
+
+        <p>
+            I promise to stand by you,  
+            to laugh with you,  
+            to grow with you,  
+            and to love you — always 💍
+        </p>
+
+        <div class="heart">❤️ ❤️ ❤️</div>
+
+        <p class="footer">
+            Forever Yours,<br>
+            <span>— Abhi</span>
+        </p>
+    </div>
+
 </div>
-
-<!-- COUNTDOWN SCREEN -->
-<div id="countdownScreen" class="hidden">
-    <h1>⏳ Countdown for You, THACHU ❤️</h1>
-    <p id="timer"></p>
-    <p>Wait till midnight ✨</p>
-</div>
-
-<!-- MAIN MESSAGE -->
-<div id="mainContent" class="hidden card">
-    <h1>🎆 Happy New Year THACHU 🎆</h1>
-
-    <p>
-        This New Year begins with **you** in my heart 💖  
-        You are not just part of my year,  
-        you are my **forever**.
-    </p>
-
-    <p>
-        Thank you for every smile,  
-        every memory,  
-        every moment 🥹
-    </p>
-
-    <p class="heart">❤️❤️❤️</p>
-
-    <h2>I Promise</h2>
-    <p>
-        To stand by you,  
-        to protect you,  
-        and to love you —  
-        in every year that comes 💍
-    </p>
-
-    <h3>Forever Yours,</h3>
-    <h2>— Abhi</h2>
-</div>
-
-<script>
-const correctPassword = "thachu2025"; // 🔐 CHANGE PASSWORD HERE
-
-function unlock() {
-    const input = document.getElementById("password").value;
-    if (input === correctPassword) {
-        document.getElementById("lockScreen").style.display = "none";
-        document.getElementById("countdownScreen").classList.remove("hidden");
-        startCountdown();
-    } else {
-        document.getElementById("error").innerText = "Wrong password 💔";
-    }
-}
-
-function startCountdown() {
-    const newYear = new Date("January 1, 2026 00:00:00").getTime();
-
-    setInterval(() => {
-        const now = new Date().getTime();
-        const diff = newYear - now;
-
-        if (diff <= 0) {
-            document.getElementById("countdownScreen").style.display = "none";
-            document.getElementById("mainContent").classList.remove("hidden");
-            return;
-        }
-
-        const h = Math.floor((diff / (1000 * 60 * 60)) % 24);
-        const m = Math.floor((diff / (1000 * 60)) % 60);
-        const s = Math.floor((diff / 1000) % 60);
-
-        document.getElementById("timer").innerText =
-            `${h}h ${m}m ${s}s`;
-    }, 1000);
-}
-</script>
 
 </body>
 </html>
