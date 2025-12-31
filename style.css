@@ -33,3 +33,10 @@
     color: red;
     margin-top: 10px;
 }
+
+#countdown {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #ff4d6d;
+    font-weight: bold;
+}
